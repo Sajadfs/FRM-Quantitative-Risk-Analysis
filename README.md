@@ -9,6 +9,9 @@ As a Model Validator or Risk Analyst, understanding CLT is crucial because:
 - It justifies the use of **Parametric VaR** for large portfolios.
 - It helps determine the required sample size ($n \ge 30$) for statistical significance.
 - It highlights why small samples ($n < 30$) require the use of **Student's t-distribution** instead of Normal.
+> [!IMPORTANT]
+> **A Critical Note on CLT and Tail Risk:** > While CLT justifies the use of Normal-based models for aggregating risks, a professional Risk Analyst must remain cautious. CLT focuses on the **convergence of the mean**, but in Financial Risk, we are primarily concerned with the **Tails** (Extreme Events). 
+> In reality, financial data often exhibits **Fat Tails (Excess Kurtosis)**, and CLT may underestimate risk during market crashes. This project serves as a foundational exercise, but for robust risk management, one should also consider **Extreme Value Theory (EVT)** or **Stress Testing**.
 
 ### Methodology
 1. **Population**: Generated 10,000 synthetic loss events using a **Lognormal Distribution**.
